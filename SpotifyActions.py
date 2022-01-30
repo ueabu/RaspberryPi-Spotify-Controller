@@ -12,9 +12,9 @@ SPOTIFY_API_URL = "{}/{}".format(SPOTIFY_API_BASE_URL, API_VERSION)
 def play():
     authorization_header = getAuthorizationHeader()
     body = {
-        "context_uri": "spotify:playlist:5botdy4HgjQJ3PTU6TT39h",
+        "context_uri": "spotify:playlist:6IG6COtztO1Xzvxto0WFN0",
         "offset": {
-            "position": 3
+            "position": 1
         },
         "position_ms": 0
         }
