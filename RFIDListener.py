@@ -12,11 +12,8 @@ def startListening():
             print("Hold a tag near the reader")
             id, text = reader.read()
             print("ID: %s\nText: %s" % (id,text))
-            
-            if id == 1047477723963:
-                play()
-
-            time.sleep(5)
+            play()
+            time.sleep(1)
     except KeyboardInterrupt:
         GPIO.cleanup()
         raise

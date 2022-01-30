@@ -9,15 +9,25 @@ API_VERSION = "v1"
 SPOTIFY_API_URL = "{}/{}".format(SPOTIFY_API_BASE_URL, API_VERSION)
 
 
-def play():
+def play(card_id):
     authorization_header = getAuthorizationHeader()
-    body = {
-        "context_uri": "spotify:playlist:6IG6COtztO1Xzvxto0WFN0",
-        "offset": {
-            "position": 1
-        },
-        "position_ms": 0
-        }
+
+    if card_id == 1047477723963:
+        body = {
+            "context_uri": "spotify:playlist:6IG6COtztO1Xzvxto0WFN0",
+            "offset": {
+                "position": 1
+            },
+            "position_ms": 0
+            }
+    elif card_id == 222959766951:
+        body = {
+            "context_uri": "spotify:album:4dZjYBEciWomanesAv3fie",
+            "offset": {
+                "position": 4
+            },
+            "position_ms": 0
+            }
 
     # Auth Step 6: Use the access token to access Spotify API
     play_endpoint = "{}/me/player/play".format(SPOTIFY_API_URL)
