@@ -13,7 +13,6 @@ class Refresh:
                                        "refresh_token": refresh_token},
                                  headers={"Authorization": "Basic " + base_64})
         response_json = response.json()
-        print(response_json)
         return response_json["access_token"]
 
 # a = Refresh()

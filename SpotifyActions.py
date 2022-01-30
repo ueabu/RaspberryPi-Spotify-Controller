@@ -1,5 +1,6 @@
 import requests
 from Refresh import Refresh
+import json
 
 SPOTIFY_AUTH_URL = "https://accounts.spotify.com/authorize"
 SPOTIFY_TOKEN_URL = "https://accounts.spotify.com/api/token"
@@ -11,9 +12,9 @@ SPOTIFY_API_URL = "{}/{}".format(SPOTIFY_API_BASE_URL, API_VERSION)
 def play():
     authorization_header = getAuthorizationHeader()
     body = {
-        "context_uri": "spotify:playlist:5XCRfaXW22GIQIZrUrw2gc",
+        "context_uri": "spotify:playlist:5botdy4HgjQJ3PTU6TT39h",
         "offset": {
-            "position": 6
+            "position": 3
         },
         "position_ms": 0
         }
