@@ -12,7 +12,7 @@ def startListening():
             print("Hold a tag near the reader")
             id, text = reader.read()
             print("ID: %s\nText: %s" % (id,text))
-            play()
+            play(id)
             time.sleep(1)
     except KeyboardInterrupt:
         GPIO.cleanup()
