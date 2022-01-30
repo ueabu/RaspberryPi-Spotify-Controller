@@ -35,5 +35,6 @@ def pause():
 
 
 def getAuthorizationHeader():
-    authorization_header = {"Authorization": "Bearer {}".format(Refresh.refresh())}
+    refreshCaller = Refresh()
+    authorization_header = {"Authorization": "Bearer {}".format(refreshCaller.refresh())}
     return authorization_header
