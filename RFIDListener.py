@@ -13,7 +13,7 @@ def startListening():
             print("Listening .....")
             id, text = reader.read()
             print(id)
-            play(id)
+            decode_card_to_action(id)
             print('-------------------------------------')
     except KeyboardInterrupt:
         GPIO.cleanup()

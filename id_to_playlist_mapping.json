@@ -1,22 +1,55 @@
 {
     "1047477723963": {
         "name": "Laugther Tears and Goosebumps - FireBoy DML",
+        "type": "play",
         "spotify_body": {
             "context_uri": "spotify:album:4dZjYBEciWomanesAv3fie",
             "offset": {
-                "position": 1
+                "position": 0
             },
             "position_ms": 0
         }
     },
     "1054179831081": {
         "name": "We're All Alone In This Together - Dave",
+        "type": "play",
         "spotify_body": {
             "context_uri": "spotify:album:6HwzIlrCDq3WF9vMq8meqG",
             "offset": {
-                "position": 1
+                "position": 0
             },
             "position_ms": 0
+        }
+    },
+    "140070165621": {
+        "name": "Shuffle And Play Next",
+        "type": "control",
+        "commands": ["shuffle", "play_next"]
+    },
+    "222959766951": {
+        "name": "Play Next",
+        "type": "control",
+        "commands": ["play_next"]
+    },
+    "207848021245" : {
+        "name": "Pause",
+        "type": "control",
+        "commands": ["pause"]
+    },
+    "shuffle": {
+        "name": "Shuffle",
+        "spotify_body": {
+            "state": true
+        }
+    },
+    "play_next": {
+        "name": "play_next",
+        "spotify_body": {
+        }
+    },
+    "pause": {
+        "name": "pause",
+        "spotify_body": {
         }
     }
 }
