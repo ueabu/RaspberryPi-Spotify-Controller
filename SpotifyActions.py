@@ -48,7 +48,9 @@ def play(card_id):
     play_request = requests.put(play_endpoint, headers=authorization_header, data=json.dumps(spotify_body))
     # print(play_request.json())
     print(play_request.status_code)
-    print(play_request.json())
+    if(play_request.status_code != 204):
+        play_request.json()
+    # print(play_request.json())
     return 'play_request.status_code'
 
 
