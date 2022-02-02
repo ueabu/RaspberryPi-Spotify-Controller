@@ -20,28 +20,15 @@ def play(card_id):
 
     id_to_action_mapping = get_id_json_mapping()
     card_id_string = str(card_id)
-    mapping = id_to_action_mapping[card_id_string]
+
+    try:
+        mapping = id_to_action_mapping[card_id_string]
+    except KeyError:
+        print('This card has not been linked to an album')
+        return
     print(mapping['name'])
     spotify_body = mapping['spotify_body']
     
-
-    # if card_id == 1047477723963:
-    #     body = {
-    #         "context_uri": "spotify:playlist:6IG6COtztO1Xzvxto0WFN0",
-    #         "offset": {
-    #             "position": 1
-    #         },
-    #         "position_ms": 0
-    #         }
-    # elif card_id == 222959766951:
-    #     body = {
-    #         "context_uri": "spotify:album:4dZjYBEciWomanesAv3fie",
-    #         "offset": {
-    #             "position": 4
-    #         },
-    #         "position_ms": 0
-    #         }
-
     # Auth Step 6: Use the access token to access Spotify API
     play_endpoint = "{}/me/player/play".format(SPOTIFY_API_URL)
 

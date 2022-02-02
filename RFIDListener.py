@@ -11,7 +11,6 @@ def startListening():
         while True:
             print("Hold a tag near the reader")
             id, text = reader.read()
-            print("ID: %s\nText: %s" % (id,text))
             play(id)
     except KeyboardInterrupt:
         GPIO.cleanup()
