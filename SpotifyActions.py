@@ -20,8 +20,9 @@ def play(card_id):
 
     id_to_action_mapping = get_id_json_mapping()
     card_id_string = str(card_id)
-    body = id_to_action_mapping[card_id_string]
-    print(body)
+    mapping = id_to_action_mapping[card_id_string]
+    print(mapping['name'])
+    spotify_body = mapping['spotify_body']
     
 
     # if card_id == 1047477723963:
@@ -44,8 +45,10 @@ def play(card_id):
     # Auth Step 6: Use the access token to access Spotify API
     play_endpoint = "{}/me/player/play".format(SPOTIFY_API_URL)
 
-    play_request = requests.put(play_endpoint, headers=authorization_header, data=json.dumps(body))
+    play_request = requests.put(play_endpoint, headers=authorization_header, data=json.dumps(spotify_body))
     # print(play_request.json())
+    print(play_request.status_code)
+    print(play_request.json())
     return 'play_request.status_code'
 
 
