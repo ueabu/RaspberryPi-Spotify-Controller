@@ -91,7 +91,7 @@ def play_next(spotify_body):
     return play_next_request.status_code
 
 
-def pause():
+def pause(spotify_body):
     authorization_header = getAuthorizationHeader()
     pause_profile_endpoint = "{}/me/player/pause".format(SPOTIFY_API_URL)
     pause_request = requests.put(pause_profile_endpoint, headers=authorization_header, data=json.dumps(spotify_body))
