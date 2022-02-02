@@ -12,6 +12,7 @@ def startListening():
             print('-------------------------------------')
             print("Listening .....")
             id, text = reader.read()
+            print(id)
             play(id)
             print('-------------------------------------')
     except KeyboardInterrupt:
