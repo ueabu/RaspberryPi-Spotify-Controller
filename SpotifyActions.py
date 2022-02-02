@@ -77,6 +77,7 @@ def shuffle(spotify_body):
     shuffle_request = requests.put(shuffle_endpoint, headers=authorization_header, data=json.dumps(spotify_body))
 
     print(shuffle_request.status_code)
+    shuffle_request.json()
     if(shuffle_request.status_code != 204):
         shuffle_request.json()
     return shuffle_request.status_code
