@@ -40,7 +40,7 @@ def decode_card_to_action(card_id):
             play_next(id_to_action_mapping['play_next']['spotify_body'])
         elif mapping['name'] == 'Pause':
             print('Pausing')
-            play_next(id_to_action_mapping['pause']['spotify_body'])
+            pause(id_to_action_mapping['pause']['spotify_body'])
 
 
 
