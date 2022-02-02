@@ -9,9 +9,11 @@ reader = SimpleMFRC522()
 def startListening():
     try:
         while True:
-            print("Hold a tag near the reader")
+            print('-------------------------------------')
+            print("Listening .....")
             id, text = reader.read()
             play(id)
+            print('-------------------------------------')
     except KeyboardInterrupt:
         GPIO.cleanup()
         raise

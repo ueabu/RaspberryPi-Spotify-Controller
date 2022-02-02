@@ -26,18 +26,18 @@ def play(card_id):
     except KeyError:
         print('This card has not been linked to an album')
         return
-    print(mapping['name'])
+    
+    print("playing "+mapping['name'])
     spotify_body = mapping['spotify_body']
     
-    # Auth Step 6: Use the access token to access Spotify API
     play_endpoint = "{}/me/player/play".format(SPOTIFY_API_URL)
 
     play_request = requests.put(play_endpoint, headers=authorization_header, data=json.dumps(spotify_body))
-    # print(play_request.json())
+
     print(play_request.status_code)
     if(play_request.status_code != 204):
         play_request.json()
-    # print(play_request.json())
+
     return 'play_request.status_code'
 
 
