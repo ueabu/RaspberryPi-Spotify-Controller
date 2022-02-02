@@ -13,8 +13,10 @@ def startListening():
             id, text = reader.read()
             print("ID: %s\nText: %s" % (id,text))
             play(id)
-            time.sleep(1)
     except KeyboardInterrupt:
+        GPIO.cleanup()
+        raise
+    except Exception:
         GPIO.cleanup()
         raise
 

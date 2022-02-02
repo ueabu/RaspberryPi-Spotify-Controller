@@ -1,0 +1,22 @@
+{
+    "1047477723963": {
+        "name": "Laugther Tears and Goosebumps - FireBoy DML",
+        "spotify_body": {
+            "context_uri": "spotify:playlist:6IG6COtztO1Xzvxto0WFN0",
+            "offset": {
+                "position": 1
+            },
+            "position_ms": 0
+        }
+    },
+    "1054179831081": {
+        "name": "We're All Alone In This Together - Dave",
+        "spotify_body": {
+            "context_uri": "spotify:album:6IG6COtztO1Xzvxto0WFN0",
+            "offset": {
+                "position": 1
+            },
+            "position_ms": 0
+        }
+    }
+}
