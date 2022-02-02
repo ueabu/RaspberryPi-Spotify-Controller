@@ -66,7 +66,7 @@ def play(spotify_body):
 
     print(play_request.status_code)
     if(play_request.status_code != 204):
-        play_request.json()
+        print(play_request.json())
 
     return play_request.status_code
 
@@ -77,9 +77,8 @@ def shuffle(spotify_body):
     shuffle_request = requests.put(shuffle_endpoint, headers=authorization_header, data=json.dumps(spotify_body))
 
     print(shuffle_request.status_code)
-    shuffle_request.json()
     if(shuffle_request.status_code != 204):
-        shuffle_request.json()
+        print(shuffle_request.json())
     return shuffle_request.status_code
 
 def play_next(spotify_body):
@@ -88,7 +87,7 @@ def play_next(spotify_body):
     play_next_request = requests.post(play_next_endpoint, headers=authorization_header, data=json.dumps(spotify_body))
     print(play_next_request.status_code)
     if(play_next_request.status_code != 204):
-        play_next_request.json()
+        print(play_next_request.json())
     return play_next_request.status_code
 
 
@@ -98,7 +97,7 @@ def pause(spotify_body):
     pause_request = requests.put(pause_profile_endpoint, headers=authorization_header, data=json.dumps(spotify_body))
     print(pause_request.status_code)
     if(pause_request.status_code != 204):
-        pause_request.json()
+        print(pause_request.json())
     return pause_request.status_code
 
 
