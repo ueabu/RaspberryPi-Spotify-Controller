@@ -21,6 +21,50 @@
             "position_ms": 0
         }
     },
+    "24354204829": {
+        "name": "Vibes Playist By Uma",
+        "type": "play",
+        "spotify_body": {
+            "context_uri": "spotify:playlist:4ZDPrFgFcN2TUd2fiM7o90",
+            "offset": {
+                "position": 0
+            },
+            "position_ms": 0
+        }
+    },
+    "298309889082": {
+        "name": "Top 2021 Songs",
+        "type": "play",
+        "spotify_body": {
+            "context_uri": "spotify:playlist:37i9dQZF1EUMDoJuT8yJsl",
+            "offset": {
+                "position": 0
+            },
+            "position_ms": 0
+        }
+    },
+    "298483887505": {
+        "name": "Amapiano - Uma",
+        "type": "play",
+        "spotify_body": {
+            "context_uri": "spotify:playlist:6IG6COtztO1Xzvxto0WFN0",
+            "offset": {
+                "position": 0
+            },
+            "position_ms": 0
+        }
+    },
+    "780318911510": {
+        "name": "USA Top 50",
+        "type": "play",
+        "spotify_body": {
+            "context_uri": "spotify:playlist:37i9dQZEVXbLRQDuF5jeBp",
+            "offset": {
+                "position": 0
+            },
+            "position_ms": 0
+        }
+    },
     "140070165621": {
         "name": "Shuffle And Play Next",
         "type": "control",
