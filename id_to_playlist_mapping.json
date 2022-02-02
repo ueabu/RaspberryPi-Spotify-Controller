@@ -39,7 +39,6 @@
     "shuffle": {
         "name": "Shuffle",
         "spotify_body": {
-            "state": true
         }
     },
     "play_next": {

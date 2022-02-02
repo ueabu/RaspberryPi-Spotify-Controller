@@ -72,7 +72,7 @@ def play(spotify_body):
 
 def shuffle(spotify_body):
     authorization_header = getAuthorizationHeader()
-    shuffle_endpoint = "{}/me/player/shuffle".format(SPOTIFY_API_URL)
+    shuffle_endpoint = "{}/me/player/shuffle?state=true".format(SPOTIFY_API_URL)
 
     shuffle_request = requests.put(shuffle_endpoint, headers=authorization_header, data=json.dumps(spotify_body))
 
