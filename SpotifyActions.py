@@ -19,8 +19,8 @@ def play(card_id):
     authorization_header = getAuthorizationHeader()
 
     id_to_action_mapping = get_id_json_mapping()
-
-    body = id_to_action_mapping[card_id]
+    card_id_string = str(card_id)
+    body = id_to_action_mapping[card_id_string]
     print(body)
     
 
