@@ -55,10 +55,10 @@
         }
     },
     "780318911510": {
-        "name": "USA Top 50",
+        "name": "Ginger Me - Spotify",
         "type": "play",
         "spotify_body": {
-            "context_uri": "spotify:playlist:37i9dQZEVXbLRQDuF5jeBp",
+            "context_uri": "spotify:playlist:37i9dQZF1DX0SlHbqMm3vJ",
             "offset": {
                 "position": 0
             },
