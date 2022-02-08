@@ -60,7 +60,7 @@ def decode_card_to_action(card_id):
 
 def play(spotify_body):
     authorization_header = getAuthorizationHeader()
-    play_endpoint = "{}/me/player/play".format(SPOTIFY_API_URL)
+    play_endpoint = "{}/me/player/play?device_id=d2fcb8d13d0525cd28766420508d9b2788ce5bc3".format(SPOTIFY_API_URL)
 
     play_request = requests.put(play_endpoint, headers=authorization_header, data=json.dumps(spotify_body))
 
